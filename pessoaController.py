@@ -33,7 +33,7 @@ def getPessoasById(id_pessoa):
 @pessoas_bp.route('/pessoas/<int:id_pessoa>', methods = ['DELETE'])
 def deletePessoas(id_pessoa):
     try:
-        del pessoas[id_pessoa]
+        pessoas.popitem(id_pessoa)
     except Exception as e:
         return e
     else:    
