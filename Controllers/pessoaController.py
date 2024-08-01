@@ -1,6 +1,5 @@
 from flask import request, make_response , jsonify, Blueprint
-from db import pessoas, cursos, alunos, professores
-
+from db import pessoas
 pessoas_bp = Blueprint('pessoas', __name__)
 
 @pessoas_bp.route('/pessoas', methods = ['GET'])
@@ -13,7 +12,7 @@ def getPessoas():
 def postPessoas():
     data = request.jsonx
     tamanhoDict = len(pessoas)
-    cursos[tamanhoDict + 1] = data
+    pessoas[tamanhoDict + 1] = data
     print(pessoas[tamanhoDict + 1])
     return "Sucessful"
 

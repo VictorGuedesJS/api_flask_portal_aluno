@@ -18,7 +18,7 @@
     min-height: 100vh;  
 }
 .side-image{
-    background-image: url("/wwwroot/assets/fundacao.jpg");
+    background-image: url("/static/assets/fundacao.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
