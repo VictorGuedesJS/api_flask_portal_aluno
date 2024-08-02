@@ -4,7 +4,7 @@ cursos = {
 }
 
 pessoas = {
-    1: {'nome': 'Ana Silva'},
+    1: {'nome': 'Ana Silva', 'matricula': '3232'},
     2: {'nome': 'Bruno Costa'},
     3: {'nome': 'Carlos Pereira'},
     4: {'nome': 'Daniela Souza'},
@@ -14,6 +14,13 @@ pessoas = {
     8: {'nome': 'Helena Martins'},
     9: {'nome': 'Igor Ribeiro'},
     10: {'nome': 'Juliana Alves'}
+}
+
+
+users = {
+    1: {'nome': 'Ana Silva', 'matricula': '3232'},
+    2: {'nome': 'Jorge', 'matricula': '4252'},
+    3: {'nome': 'Lucas', 'matricula': '5262'}
 }
 
 alunos = {
