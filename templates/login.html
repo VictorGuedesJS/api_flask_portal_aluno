@@ -29,14 +29,14 @@
 
                         <h3 style="margin-bottom: 2rem;">Portal do Aluno</h3>
                         <!-- <p>Bem-vindo ao FMM Saúde! Aqui, você cuida da sua saúde de forma simples e eficaz. Preencha suas informações pessoais e médicas rapidamente, mantenha seu histórico de saúde sempre acessível e faça uma avaliação de risco de hipertensão de forma personalizada. Estamos aqui para ajudá-lo em sua jornada para uma vida mais saudável. Experimente o FMM Saúde agora mesmo!</p>                            -->
-                        <form method="Post" action="/login">
+                        <form method="post" action="/login">
 
                         <div class="input-field">
-                            <input type="text" class="input" id="matricula" required="" autocomplete="off">
+                            <input type="text" class="input" id="matricula" required=""  name="matricula" autocomplete="off">
                             <label for="matricula">Matricula</label>
                         </div>
                         <div class="input-field">
-                            <input type="password" class="input" id="pass" required="">
+                            <input type="password" class="input" id="pass" name="pass" required="">
                             <label for="pass">Senha</label>
                         </div>
                         <div class="input-field">
