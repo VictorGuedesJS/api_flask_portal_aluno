@@ -17,9 +17,10 @@ def login():
         usuario = autenticarUsuario(matricula, password)
 
         if usuario == False:
-            return redirect(url_for('login'))
+            return redirect(url_for('login.login'))
         else:
-           return render_template('home.html')
+           session['logged_in'] =  True
+           return redirect(url_for('home'))
             
     
     return render_template('login.html')

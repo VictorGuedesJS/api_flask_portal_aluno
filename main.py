@@ -5,6 +5,7 @@ from Controllers.loginController import login_bp
 
 
 app = Flask(__name__)
+app.secret_key = "oi"
 app.register_blueprint(pessoas_bp)
 app.register_blueprint(cursos_bp)   
 app.register_blueprint(login_bp)
