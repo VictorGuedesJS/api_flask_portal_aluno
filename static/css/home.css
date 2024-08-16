@@ -1,66 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+body{
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-wrap: wrap;
-    background: #3c524e;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    /* Adicionado para permitir a quebra de linha se necessário */
+li{
+    list-style: none;
 }
 
-.container,
-.container-2 {
-    width: 300px;
-    height: 300px;
-    border-radius: 24px;
+a{
+    text-decoration: none;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+#sidebar{
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+    background-color: #000;
     display: flex;
     flex-direction: column;
-    /* Modificado de row (implícito) para column */
-    align-items: center;
-    justify-content: center;
-    /* Isso centraliza os itens na direção vertical agora */
-    background: rgb(206, 206, 206);
-    margin: 10px;
-    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.5);
-    cursor: pointer;;
-    /* Adicionado para garantir espaço entre as caixas em dispositivos menores ou em quebra de linha */
 }
 
-.container {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    /* margin-right: 50px; Removido para melhor responsividade */
+#sidebar.collapsed{
+    margin-left: -264px;
 }
 
-.container-2 {
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+.toggler-btn{
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
 }
 
-.imc-image {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    /* Adicionado para garantir espaço entre o texto e a imagem */
+.toggler-btn i{
+    font-size: 1.5rem;
+    color:#000;
+    font-weight: bold;
 }
 
-.container:hover,
-.container-2:hover {
-    background: rgba(226, 226, 226, 0.8);
-    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
-    transition: linear;
-    transition: .75s;
+.navbar{
+    padding: 1.15rem 1.5rem;
+}
+
+.sidebar-nav{
+    flex: 1 1 auto;
+}
+
+.sidebar-logo{
+    padding: 1.15rem 1.5rem;
+    text-align: center;
+}
+
+.sidebar-logo a{
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+
+.sidebar-header{
+    color: #fff;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link{
+    padding: .625rem 1.625rem;
+    color: #fff;
+    position: relative;
+    transition: all 0.35s;
+    display: block;
+}
+
+a.sider-link:hover{
+    background-color: #f9f6f630;
 
 }
 
-h3{
-    color: #060606;
-    font-size: 1.2rem;
-    font-weight: bold;    
+.sidebar-link[data-bs-toggle="collapese"]::after{
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: a;
+    right: 1.5rem;
+    top: 1.4rem
 }
-
