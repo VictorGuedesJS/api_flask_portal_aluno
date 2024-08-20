@@ -1,4 +1,4 @@
-# Aplicação Flask
+# Portal FMM
 
 Aplicação feita para o projeto da faculdade de um portal do aluno
 
@@ -16,39 +16,36 @@ Aplicação feita para o projeto da faculdade de um portal do aluno
 
 2 . **Crie e ative um ambiente virtual:**
 
-No Windows:
+**No Windows:**
 
-python -m venv venv
+   `python -m venv venv`
+   
+   `venv\Scripts\activate`
 
-venv\Scripts\activate
+**No macOS/Linux:**
 
-No macOS/Linux:
+`python3 -m venv venv`
 
-python3 -m venv venv
-
-source venv/bin/activate
+`source venv/bin/activate`
 
 3 . **Instale as dependências:**
 
 Com o ambiente virtual ativado, instale as dependências listadas em requirements.txt:
 
-pip install -r requirements.txt
-
-Executando a Aplicação
-
+`pip install -r requirements.txt`
 
 ## Executando a Aplicação
 
 Para iniciar a aplicação Flask, execute o arquivo main.py:
 
-python main.py
+`python main.py`
 
 A aplicação será iniciada em http://127.0.0.1:5000/. Abra esta URL no seu navegador para acessar a aplicação.
 
 ## Dependências
  As dependências estão listadas em requirements.txt. Para adicionar novas dependências, use:
 
-  pip freeze > requirements.txt
+  `pip freeze > requirements.txt`
 
 ## Contribuindo
 
