@@ -1,2 +1,15 @@
+# Ambiente virtual
 venv/
+
+# Arquivos de compilação
+*.pyc
+*.pyo
 __pycache__/
+
+# Arquivos do sistema
+.DS_Store
+*.log
+
+# Outras configurações específicas do editor/IDE
+.vscode/
+.idea/
