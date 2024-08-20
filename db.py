@@ -16,6 +16,13 @@ pessoas = {
     10: {'nome': 'Juliana Alves'}
 }
 
+
+users = {
+    1: {'nome': 'Ana Silva', 'matricula': '3232', 'senha': '32'},
+    2: {'nome': 'Jorge', 'matricula': '4252','senha': '42'},
+    3: {'nome': 'Lucas', 'matricula': '5262', 'senha': '52'}
+}
+
 alunos = {
     1: {'pessoa_id': 1, 'curso_id': 1, 'tipo': 'aluno'},
     2: {'pessoa_id': 2, 'curso_id': 1, 'tipo': 'aluno'},
