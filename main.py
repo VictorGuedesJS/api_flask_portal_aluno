@@ -15,7 +15,8 @@ def home():
    if 'logged_in' not in session or not session['logged_in']:
      return redirect(url_for('login.login'))
    else:
-     return render_template("home.html")
+     nome = session.get('nome')
+     return render_template("home.html", nome = nome)
    
 
 app.run()

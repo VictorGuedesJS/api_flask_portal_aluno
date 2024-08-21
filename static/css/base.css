@@ -19,6 +19,12 @@ a{
     background-color: #f9f9f9;
 }
 
+#logo-image{
+
+    width: 180px;
+
+}
+
 #sidebar{
     max-width: 264px;
     min-width: 264px;
