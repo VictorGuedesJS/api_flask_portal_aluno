@@ -1,6 +1,6 @@
 # Aplicação Flask
 
-Este é um exemplo de uma aplicação web simples construída com Flask.
+Aplicação feita para o projeto da faculdade de um portal do aluno
 
 ## Pré-requisitos
 
