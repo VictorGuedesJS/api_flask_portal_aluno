@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="/static/css/base.css" />
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    {% block css %} <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />{% endblock %}
     <title>{% block title %}Template{% endblock %}</title>
   </head>
   <body>
@@ -80,14 +81,14 @@
         </div>
       </aside>
 
-      <div class="main">
+      <div class="main p-2">
         <nav class="navbar navbar-expand border-bottom">
           <button class="toggler-btn" type="button">
             <i class="lni lni-text-align-left"></i>
           </button>
         </nav>
         <main class="p-3">
-          <div class="cotainer-fluid">
+          <div class="container-fluid">
             {% block content %}
             <!-- Conteúdo da página será inserido aqui -->
             {% endblock %}
