@@ -42,4 +42,12 @@
 .col{
     display: flex; 
     justify-content: center;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fadeinleft {
+    opacity: 1;
+    transform: translateX(0);
 }

@@ -5,10 +5,10 @@
 
 {% block content %}
     <div class="mb-3 text-center">
-        <h1>Bem-vindo, {{ nome }}!</h1>
+        <h1 id="textWelcome"></h1>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-2 g-4 p-5 ">
+    <div id="cards" class="row row-cols-1 row-cols-md-2 g-4 p-5">
         <div class="col">
           <div class="card bg-transparent border-secondary">
             <div class="card-body">
@@ -39,4 +39,42 @@
         </div>
       </div>
 
+{% endblock %}
+
+{% block script %}
+<script>
+
+const welcome = document.getElementById("textWelcome")
+var nome = "{{ nome }}"
+
+document.addEventListener('DOMContentLoaded', function(){
+setTimeout( function() {typeWriter("Welcome, " + nome + "!", welcome, 50, "")},300);
+
+setTimeout(function(){ cards = document.querySelectorAll('.col');
+            // Adiciona animação com atraso crescente
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('fadeinleft');
+                }, index * 50); // Atraso de 150ms entre os cartões
+            });
+          },1050);
+});
+
+
+
+  function typeWriter(text, element, delay, callback) {
+    let index = 0;
+    const interval = setInterval(function () {
+      element.textContent += text[index];
+      index++;
+      if (index >= text.length) {
+        clearInterval(interval);
+        if (callback) {
+          callback();
+        }
+      }
+    }, delay);
+  }
+
+</script>
 {% endblock %}
