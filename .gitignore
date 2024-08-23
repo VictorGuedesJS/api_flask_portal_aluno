@@ -13,3 +13,4 @@ __pycache__/
 # Outras configurações específicas do editor/IDE
 .vscode/
 .idea/
+.github/
