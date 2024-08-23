@@ -7,7 +7,7 @@ on:
   push:
     branches: [ "first-api" ]
   pull_request:
-    branches: [ "first-api ]
+    branches: [ "first-api" ]
 
 permissions:
   contents: read
